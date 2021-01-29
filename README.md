@@ -9,6 +9,36 @@ Método post: "/gabarito/cadastro"
 Cadastrar o gabarito de cada prova;
 exemplo de request:
 
+{
+    "questoes": [
+            {
+             "alternativa": "A",
+             "peso": 3
+            },
+            {
+             "alternativa": "B",
+             "peso": 4
+            },
+            {
+             "alternativa": "C",
+             "peso": 5
+            },
+            {
+             "alternativa": "D",
+             "peso": 1
+            },
+            {
+             "alternativa": "D",
+             "peso": 2
+            }
+        ]
+}
+
+Response esperado: "Gabarito cadastrado com sucesso"
+
+Método post: "/alunos/prova-aluno"
+Cadastrar as respostas de cada aluno para cada prova;
+
 [
         {
             "nome": "bruce",
@@ -42,35 +72,6 @@ exemplo de request:
         }
 ]
 
-Response esperado: "Gabarito cadastrado com sucesso"
-
-Método post: "/alunos/prova-aluno"
-Cadastrar as respostas de cada aluno para cada prova;
-
-{
-    "questoes": [
-            {
-             "alternativa": "A",
-             "peso": 3
-            },
-            {
-             "alternativa": "B",
-             "peso": 4
-            },
-            {
-             "alternativa": "C",
-             "peso": 5
-            },
-            {
-             "alternativa": "D",
-             "peso": 1
-            },
-            {
-             "alternativa": "D",
-             "peso": 2
-            }
-        ]
-}
 
 Response esperado: "Provas cadastrada com sucesso"
 
